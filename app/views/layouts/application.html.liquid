@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'layout/head' %}
+</head>
+
+<body>
+  <main class="wrapper">
+    <section class='header'>
+      <div class="banner">
+        <img src="{{ 'images/safety.jpg' | asset_url }}" alt="" />
+     </div>
+    </section>
+
+    <section id="content" class="container">
+
+      {{ content_for_layout }}
+
+    </section>
+  </main>
+</body>
+</html>

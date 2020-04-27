@@ -1,0 +1,55 @@
+[10:53:48.271] Global cache location '/Users/ignacy/Library/Caches/typescript/3.7', safe file path '/users/ignacy/.nvm/versions/node/v12.6.0/lib/node_modules/typescript/lib/typingsafelist.json', types map path /users/ignacy/.nvm/versions/node/v12.6.0/lib/node_modules/typescript/lib/typesmap.json
+[10:53:48.273] Processing cache location '/Users/ignacy/Library/Caches/typescript/3.7'
+[10:53:48.273] Trying to find '/Users/ignacy/Library/Caches/typescript/3.7/package.json'...
+[10:53:48.274] Loaded content of '/Users/ignacy/Library/Caches/typescript/3.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.487"},"devDependencies":{"@types/atob":"^2.1.2","@types/autoprefixer":"^9.6.1","@types/babel__core":"^7.1.3","@types/bluebird":"^3.5.30","@types/bootbox":"^5.2.0","@types/bootstrap":"^4.3.1","@types/classnames":"^2.2.9","@types/clipboard":"^2.0.1","@types/codemirror":"0.0.84","@types/core-js":"^2.5.2","@types/extend":"^3.0.1","@types/feather-icons":"^4.7.0","@types/jquery":"^3.3.32","@types/js-base64":"^2.3.1","@types/lodash-es":"^4.17.3","@types/mini-css-extract-plugin":"^0.9.0","@types/node-notifier":"^6.0.1","@types/object-path":"^0.11.0","@types/prop-types":"^15.7.3","@types/react":"^16.9.19","@types/react-dom":"^16.9.5","@types/react-select":"^3.0.10","@types/react-text-mask":"^5.4.6","@types/request":"^2.48.4","@types/request-promise":"^4.1.46","@types/sass":"^1.16.0","@types/semver":"^7.1.0","@types/shelljs":"^0.8.7","@types/simplemde":"^1.11.7","@types/sprintf":"^0.1.0","@types/terser-webpack-plugin":"^2.2.0","@types/tough-cookie":"^4.0.0","@types/webpack":"^4.41.6","@types/webpack-dev-server":"^3.10.0","@types/webpack-manifest-plugin":"^2.1.0","@types/which":"^1.3.2"}}
+[10:53:48.274] Loaded content of '/Users/ignacy/Library/Caches/typescript/3.7/package-lock.json'
+[10:53:48.282] Adding entry into typings cache: 'atob' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/atob/index.d.ts'
+[10:53:48.284] Adding entry into typings cache: 'autoprefixer' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/autoprefixer/index.d.ts'
+[10:53:48.286] Adding entry into typings cache: 'babel__core' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/babel__core/index.d.ts'
+[10:53:48.288] Adding entry into typings cache: 'bluebird' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/bluebird/index.d.ts'
+[10:53:48.291] Adding entry into typings cache: 'bootbox' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/bootbox/index.d.ts'
+[10:53:48.294] Adding entry into typings cache: 'bootstrap' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/bootstrap/index.d.ts'
+[10:53:48.295] Adding entry into typings cache: 'classnames' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/classnames/index.d.ts'
+[10:53:48.298] Adding entry into typings cache: 'clipboard' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/clipboard/index.d.ts'
+[10:53:48.300] Adding entry into typings cache: 'codemirror' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/codemirror/index.d.ts'
+[10:53:48.301] Adding entry into typings cache: 'core-js' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/core-js/index.d.ts'
+[10:53:48.304] Adding entry into typings cache: 'extend' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/extend/index.d.ts'
+[10:53:48.305] Adding entry into typings cache: 'feather-icons' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/feather-icons/index.d.ts'
+[10:53:48.307] Adding entry into typings cache: 'jquery' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/jquery/index.d.ts'
+[10:53:48.309] Adding entry into typings cache: 'js-base64' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/js-base64/index.d.ts'
+[10:53:48.311] Adding entry into typings cache: 'lodash-es' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/lodash-es/index.d.ts'
+[10:53:48.312] Adding entry into typings cache: 'mini-css-extract-plugin' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/mini-css-extract-plugin/index.d.ts'
+[10:53:48.314] Adding entry into typings cache: 'node-notifier' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/node-notifier/index.d.ts'
+[10:53:48.315] Adding entry into typings cache: 'object-path' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/object-path/index.d.ts'
+[10:53:48.316] Adding entry into typings cache: 'prop-types' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/prop-types/index.d.ts'
+[10:53:48.318] Adding entry into typings cache: 'react' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/react/index.d.ts'
+[10:53:48.319] Adding entry into typings cache: 'react-dom' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/react-dom/index.d.ts'
+[10:53:48.322] Adding entry into typings cache: 'react-select' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/react-select/index.d.ts'
+[10:53:48.323] Adding entry into typings cache: 'react-text-mask' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/react-text-mask/index.d.ts'
+[10:53:48.325] Adding entry into typings cache: 'request' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/request/index.d.ts'
+[10:53:48.327] Adding entry into typings cache: 'request-promise' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/request-promise/index.d.ts'
+[10:53:48.328] Adding entry into typings cache: 'sass' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/sass/index.d.ts'
+[10:53:48.334] Adding entry into typings cache: 'semver' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/semver/index.d.ts'
+[10:53:48.335] Adding entry into typings cache: 'shelljs' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/shelljs/index.d.ts'
+[10:53:48.337] Adding entry into typings cache: 'simplemde' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/simplemde/index.d.ts'
+[10:53:48.338] Adding entry into typings cache: 'sprintf' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/sprintf/index.d.ts'
+[10:53:48.339] Adding entry into typings cache: 'terser-webpack-plugin' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/terser-webpack-plugin/index.d.ts'
+[10:53:48.340] Adding entry into typings cache: 'tough-cookie' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/tough-cookie/index.d.ts'
+[10:53:48.342] Adding entry into typings cache: 'webpack' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/webpack/index.d.ts'
+[10:53:48.346] Adding entry into typings cache: 'webpack-dev-server' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/webpack-dev-server/index.d.ts'
+[10:53:48.348] Adding entry into typings cache: 'webpack-manifest-plugin' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/webpack-manifest-plugin/index.d.ts'
+[10:53:48.350] Adding entry into typings cache: 'which' => '/Users/ignacy/Library/Caches/typescript/3.7/node_modules/@types/which/index.d.ts'
+[10:53:48.350] Finished processing cache location '/Users/ignacy/Library/Caches/typescript/3.7'
+[10:53:48.350] Process id: 50090
+[10:53:48.350] NPM location: /Users/ignacy/.nvm/versions/node/v12.6.0/bin/npm (explicit '--npmLocation' not  provided)
+[10:53:48.350] validateDefaultNpmLocation: false
+[10:53:48.351] Npm config file: /Users/ignacy/Library/Caches/typescript/3.7/package.json
+[10:53:48.351] Updating types-registry npm package...
+[10:53:48.351] Exec: /Users/ignacy/.nvm/versions/node/v12.6.0/bin/npm install --ignore-scripts types-registry@latest
+[10:53:49.637]     Succeeded. stdout:
+    + types-registry@0.1.487
+    updated 1 package and audited 215 packages in 0.949s
+found 0 vulnerabilities
+
+
+[10:53:49.637] Updated types-registry npm package

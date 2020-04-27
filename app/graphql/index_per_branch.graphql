@@ -1,0 +1,24 @@
+query index_per_branch($repoName: String!, $branchName: String!) {
+  models(
+    per_page: 3
+    filter: {
+      model_schema_name: { value: "push" }
+      properties: [
+        { name: "repo_name", value: $repoName }
+        { name: "ref", value: $branchName }
+      ]
+    }
+    sort: { created_at: { order: DESC } }
+  ) {
+    results {
+      id
+      repo_full_name: property(name: "repo_full_name")
+      compare: property(name: "compare")
+      autor: property(name: "autor_name")
+      avatar_url: property(name: "avatar_url")
+      after: property(name: "head")
+      message: property(name: "head_message")
+      created_at
+    }
+  }
+}

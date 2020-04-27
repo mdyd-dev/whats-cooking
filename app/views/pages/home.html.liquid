@@ -1,0 +1,27 @@
+{% assign observedRepos = "desksnearme, partner-portal" | split: ", " %}
+{% assign observedBranches = "master, europe, qa1, qa2" | split: ", " %}
+
+{% for repo in observedRepos %}
+
+  <h2> <a href="https://github.com/mdyd-dev/{{ repo }}"> {{ repo }} </a> </h2>
+
+  {% for branch in observedBranches %}
+    {% assign ref = "refs/heads/" | append: branch %}
+    {% graphql events = 'index_per_branch', repoName: repo , branchName: ref | fetch: 'models' | fetch: 'results' %}
+    {% if events.size > 0 %}
+
+      <u> On {{ branch }} </u>
+      {% assign push = events | first %}
+        <ul style="list-style-type: none;">
+          <li>
+            <blockquote>
+              <img alt="avatar" src="{{ push.avatar_url }}" width="16" height="16"> <b>{{ push.autor }} </b> on {{ push.created_at | localize: "long" }} <br/>
+              <strong>{{ push.message }} </strong> <br/>
+              diff: <a href="{{ push.compare }}">{{push.after}}</a>
+            </blockquote>
+          </li>
+        </ul>
+    {% endif %}
+  {% endfor %}
+
+{% endfor %}

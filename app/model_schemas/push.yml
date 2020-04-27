@@ -1,0 +1,20 @@
+name: push
+properties:
+  - name: repo_name
+    type: string
+  - name: repo_full_name
+    type: string
+  - name: autor_login
+    type: string
+  - name: autor_name
+    type: string
+  - name: avatar_url
+    type: string
+  - name: head
+    type: string
+  - name: head_message
+    type: string
+  - name: compare
+    type: string
+  - name: ref
+    type: string

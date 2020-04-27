@@ -1,0 +1,10 @@
+query repos {
+  models(per_page: 1000, filter: {
+      model_schema_name: { value: "push" }
+  }
+  ) {
+    results {
+      name: property(name: "repo_name")
+    }
+  }
+}

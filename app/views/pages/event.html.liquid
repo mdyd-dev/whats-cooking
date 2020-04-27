@@ -1,0 +1,74 @@
+---
+slug: event
+method: post
+format: json
+---
+
+{%- parse_json _fields -%}
+
+{%- if context.params.action != blank %}
+
+  {
+    "properties_attributes": {
+      "repo_name": {{ context.params.pull_request.repo.name | to_json }},
+      "repo_full_name": {{ context.params.pull_request.repo.full_name | to_json }},
+      "compare": {{ context.params.pull_request.url | to_json }},
+      "autor_login": {{ context.params.pull_request.user.login | to_json }},
+      "autor_name": {{ context.params.pull_request.user.login | to_json }},
+      "avatar_url": {{ context.params.pull_request.user.avatar_url | to_json }},
+      "head": {{ context.params.pull_request.head.sha | to_json }},
+      "head_message": {{ context.params.pull_request.title | to_json }},
+      "ref": {{ context.params.pull_request.base.ref | to_json }}
+    }
+  }
+
+{%- else -%}
+
+  {
+    "properties_attributes": {
+      "repo_name": {{ context.params.repository.name | to_json }},
+      "repo_full_name": {{ context.params.repository.full_name | to_json }},
+      "compare": {{ context.params.compare | to_json }},
+      "autor_login": {{ context.params.sender.login | to_json }},
+      "autor_name": {{ context.params.pusher.name | to_json }},
+      "avatar_url": {{ context.params.sender.avatar_url | to_json }},
+      "head": {{ context.params.after | to_json }},
+      "head_message": {{ context.params.head_commit.message | to_json }},
+      "ref": {{ context.params.ref | to_json }}
+    }
+  }
+{%- endif -%}
+
+{%- endparse_json -%}
+
+{{ _fields }}
+
+{% graphql result, fields: _fields %}
+mutation form_submit($fields: HashObject!) {
+  form_submit(fields: $fields, form_name: "create_push_event") {
+    errors: validation_errors
+    result {
+      model {
+        id
+      }
+    }
+  }
+}
+{% endgraphql %}
+
+{%- if result.errors == blank -%}
+  {%- if result[query]['results'] != blank -%}
+
+    {%- if is_one_object -%}
+      {{ result[query]['results'].first | json }}
+    {%- else -%}
+      {{ result[query]['results'] | json }}
+    {%- endif -%}
+
+  {%- else -%}
+    {{ result[query] | json }}
+  {%- endif -%}
+
+{%- else -%}
+  {{ result | json }}
+{%- endif -%}
