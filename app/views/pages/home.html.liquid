@@ -15,7 +15,12 @@
         <ul style="list-style-type: none;">
           <li>
             <blockquote>
-              <img alt="avatar" src="{{ push.avatar_url }}" width="16" height="16"> <b>{{ push.autor }} </b> on {{ push.created_at | localize: "long" }} <br/>
+              {% assign push_days = push.created_at | strftime: "%j" %}
+              {% assign now_days = 'now' | to_time | strftime: "%j" %}
+              <img alt="avatar" src="{{ push.avatar_url }}" width="16" height="16">
+              <b>{{ push.autor }} </b>
+              {{ now_days | minus: push_days }} days ago
+              on {{ push.created_at | localize: "long" }} <br/>
               <strong>{{ push.message }} </strong> <br/>
               diff: <a href="{{ push.compare }}">{{push.after}}</a>
             </blockquote>
